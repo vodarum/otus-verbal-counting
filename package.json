@@ -1,6 +1,7 @@
 {
   "name": "otus-verbal-counting",
   "version": "0.1.0",
+  "homepage": "https://vodarum.github.io/otus-verbal-counting",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
