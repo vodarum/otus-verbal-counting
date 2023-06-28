@@ -1,7 +1,7 @@
 <template>
   <div class="game">
     <div class="game__header">
-      <q-btn color="deep-orange" glossy icon="close" label="Отмена" @click="$router.replace({ path: '/' })" />
+      <q-btn color="red-5" glossy icon="close" label="Отмена" @click="$router.replace({ path: '/' })" />
 
       <GameTimer :duration="duration" @finish-timer="finishGame" />
     </div>
@@ -20,9 +20,9 @@
 
       <div class="game__keyboard keyboard">
         <div class="keyboard__row keyboard__row_special">
-          <q-btn color="brown-5" icon="arrow_back" @click="remove" />
-          <q-btn color="brown-5" icon="horizontal_rule" @click="pressKey('-')" />
-          <q-btn color="brown-5" icon="arrow_forward" @click="accept" />
+          <q-btn color="secondary" icon="backspace" @click="remove" />
+          <q-btn color="secondary" icon="horizontal_rule" @click="pressKey('-')" />
+          <q-btn color="green-5" icon="check" @click="accept" />
         </div>
 
         <div class="keyboard__row keyboard__row_number">
@@ -66,7 +66,7 @@
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  color: #dd2c00;
+  color: #ef5350;
 }
 
 .game__refresh {
