@@ -1,4 +1,13 @@
-const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
-  transpileDependencies: true
-})
+  transpileDependencies: ["quasar"],
+  pluginOptions: {
+    quasar: {
+      importStrategy: "kebab",
+      rtlSupport: false,
+    },
+  },
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/otus-verbal-counting/'
+    : '/'
+});
